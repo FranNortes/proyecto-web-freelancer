@@ -4,6 +4,7 @@
     --primario: #ffc107;
     --secunadrio: #0097A7;
     --gris: #757575;
+    --grisclaro: #dfe9f3
 }
 /* globales */
 html {
@@ -12,6 +13,12 @@ html {
 }
 *, *:before, *:after {
     box-sizing: inherit;
+  }
+
+body {
+    font-size: 16px; /* 1rem = 10 px*/
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100%); /* hacer un degradado*/
   }
 
 .contenedor{
@@ -33,10 +40,7 @@ html {
 }
 
   /* tipografia */
-body {
-    font-size: 16px; /* 1rem = 10 px*/
-    font-family: 'Krub', sans-serif;
-}
+
 h1{
     font-size: 3.8rem;
 }
