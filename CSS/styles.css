@@ -5,14 +5,34 @@
     --secunadrio: #0097A7;
     --gris: #757575;
 }
-
+/* globales */
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
+    box-sizing: border-box; /* hack para box model*/ 
 }
 *, *:before, *:after {
     box-sizing: inherit;
   }
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.boton{
+    background-color: var(--secunadrio);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+
+  /* tipografia */
 body {
     font-size: 16px; /* 1rem = 10 px*/
     font-family: 'Krub', sans-serif;
@@ -29,35 +49,18 @@ h3{
 h1,h2,h3{
     text-align: center;
 }
-
+/* titulos */
 .titulo span {
     font-size: 2rem;
 }
 
-.contenedor{
-    max-width: 120rem;
-    margin: 0 auto;
-}
-
-.boton{
-    background-color: var(--secunadrio);
-    color: var(--blanco);
-    padding: 1rem 3rem;
-    margin-top: 3rem;
-    font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: .5rem;
-    width: 90%;
-    text-align: center;
-}
 @media (min-width: 768px) {
     .boton {
         width: auto;
     }
     
 }
+/* navegacion principal */
 .nav-bg{
     background-color: var(--secunadrio);
 }
@@ -87,6 +90,8 @@ h1,h2,h3{
     color: var(--oscuro);
     
 }
+
+/* hero */
 .hero{
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
